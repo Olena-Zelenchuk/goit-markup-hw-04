@@ -138,12 +138,33 @@ p {
   margin-right: 30px;
 }
 .contacts-link {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-text-color);
+}
+
+.contacts-link::before {
+  content: " ";
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-size: contain;
+}
+
+.contacts-link.letter-link::before {
+  width: 16px;
+  height: 11px;
+  background-image: url("../img/letter.svg");
+}
+
+.contacts-link.mobile-link::before {
+  width: 10px;
+  height: 15px;
+  background-image: url("../img/mobile.svg");
 }
 
 .contacts-link:hover,
@@ -426,6 +447,12 @@ p {
   border: 1px solid #eeeeee;
 }
 
+.projects-list-item:hover {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-list-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -436,6 +463,9 @@ p {
 
 .projects-list-item a {
   text-decoration: none;
+}
+
+.projects-list-item img {
 }
 
 .project-link p,
@@ -467,14 +497,14 @@ h3 {
 .join-us {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   color: var(--main-white-color);
 }
 
 .mailing {
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   color: var(--main-white-color);
 }
