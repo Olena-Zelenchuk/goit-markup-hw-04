@@ -283,19 +283,19 @@ p {
 }
 
 .benefits-item.item-details::before {
-  background-image: url("../img/details.svg");
+  background-image: url("../img/icons/details.svg");
 }
 
 .benefits-item.item-punctual::before {
-  background-image: url("../img/punctual.svg");
+  background-image: url("../img/icons/punctual.svg");
 }
 
 .benefits-item.item-planing::before {
-  background-image: url("../img/planing.svg");
+  background-image: url("../img/icons/planing.svg");
 }
 
 .benefits-item.item-technology::before {
-  background-image: url("../img/technology.svg");
+  background-image: url("../img/icons/technology.svg ");
 }
 
 .main-text {
@@ -379,10 +379,30 @@ p {
   text-align: center;
 }
 
-.team-social-link-li {
+.team-social-link-list {
   display: flex;
   justify-content: space-evenly;
   margin-top: 16px;
+}
+
+.team-social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: var(--main-white-color);
+}
+
+.link-icon {
+  fill: currentColor;
+}
+
+.team-social-link:hover {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
 }
 
 .clients-list {
@@ -401,6 +421,14 @@ p {
 }
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.logo-list {
+  color: #afb1b8;
+}
+
+.logo-one {
+  fill: currentColor;
 }
 
 .projects {
